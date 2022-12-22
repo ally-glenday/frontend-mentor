@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet"> 
 
     <link
       rel="icon"
@@ -17,31 +20,38 @@
   </head>
   <body>
     <header>
-    <nav>
-      <ul>
-        <li>Features</li>
+      <img src="images/logo.svg" alt="Logo" />
+      <nav>
+        <ul>
+          <li>Features</li>
           <ul>
             <li>Todo List</li>
             <li>Calendar</li>
             <li>Reminders</li>
             <li>Planning</li>
           </ul>
-        <li>Company</li>
+          <li>Company</li>
           <ul>
             <li>History</li>
             <li>Our Team</li>
             <li>Blog</li>
           </ul>
-        <li>Careers</li>
-        <li>About</li>
-      </ul>
+          <li>Careers</li>
+          <li>About</li>
+        </ul>
 
-      <ul>
-        <li>Login</li>
-        <li>Register</li>
-      </ul>
-    </nav>
-   </header>
+        <ul>
+          <li>Login</li>
+          <li>Register</li>
+        </ul>
+      </nav>
+    </header>
+    <picture>
+      <source media="(min-width: 375px)" srcset="images/image-hero-mobile.png" width="750" height="564" />
+      <source media="(min-width: 1440px)" srcset="images/image-hero-desktop.png" width="960" height="1260" />
+      <img src="images/image-hero-desktop.png" width="960" height="1260" alt="Geometric shapes and a young man standing up working on a laptop" />
+    </picture>
+    
 
     <h1>Make remote work</h1>
 
@@ -58,6 +68,6 @@
           >Frontend Mentor</a
         >. Coded by <a href="https://github.com/ally-glenday">Ally Glenday</a>.
       </div>
-  </footer>
+    </footer>
   </body>
 </html>
