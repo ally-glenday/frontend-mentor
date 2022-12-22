@@ -54,20 +54,52 @@ table {
 	color: hsl(228, 45%, 44%);
   }
 
+  a{
+	text-decoration: none;
+  }
+
 /* ----------------------------- End of Reset -------------------------- */
+
+/* Colour & names taken from Design spec file */ 
+:root{
+	--almostWhite: hsl(0, 0%, 98%);
+	--mediumGray: hsl(0, 0%, 41%);
+	--almostBlack: hsl(0, 0%, 8%);
+}
+
+
 /* Fonts - Sets all body text to Epilouge, along with fallback fonts */
 body{
 	font-family: 'Epilogue', Arial, Helvetica, sans-serif;
 	font-weight: 500;
+	color: var(--almostBlack);	
 }
 /* Headings */
 h1{
 	font-weight: 700;
+	font-size: 9vw;
+		
 }
-
 
 /* Images - Sets all images to a maximum width of 100% of the viewport */
 img{
 	max-width: 100vw;
 	height: auto;
+}
+
+main{
+	text-align: center;
+}
+
+main p{
+	color: var(--mediumGray);
+	margin: 5%;
+	line-height: 1.5em;
+}
+
+main a{
+	background-color: var(--almostBlack);
+	color: var(--almostWhite);
+	padding: 4% 6%;
+	border-radius: 1em;
 }
